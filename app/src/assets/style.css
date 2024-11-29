@@ -1,0 +1,37 @@
+/* ./src/index.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .input-group-login {
+    @apply flex m-1 py-1 space-x-2 sm:flex sm:flex-col text-sm font-roboto 
+           [&>input]:flex-1 
+           [&>input]:border 
+           [&>input]:border-primary 
+           [&>input]:text-sm 
+           [&>input]:pl-2
+           [&>input]:mt-1
+           [&>input]:bg-softprimary
+           [&>input]:placeholder:text-xs;
+  }
+
+  .input-group-register {
+    @apply flex m-1 py-1 space-x-2 text-sm font-roboto 
+           [&>input]:flex-1 
+           [&>input]:border 
+           [&>input]:border-primary 
+           [&>input]:text-sm 
+           [&>input]:pl-2
+           [&>input]:mt-1
+           [&>input]:bg-softprimary
+           [&>input]:placeholder:text-xs;
+  }
+
+  .btn-primary {
+    @apply bg-primary text-white  py-2 px-5 rounded hover:bg-primaryVariant;
+  }
+  .btn-scondary {
+    @apply bg-primary text-white text-xs py-1 px-3 rounded hover:bg-primaryVariant;
+  }
+}
